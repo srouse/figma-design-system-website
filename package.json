@@ -6,6 +6,10 @@
   "author": "Scott Rouse <scott.rouse@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node ./scripts/build.mjs"
+    "build": "yarn build:readme",
+    "build:readme": "ctfl-readme build"
+  },
+  "dependencies": {
+    "contentful-readme-generator": "^0.0.8"
   }
 }
