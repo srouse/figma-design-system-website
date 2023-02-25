@@ -7,9 +7,11 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn build:readme",
-    "build:readme": "ctfl-readme build"
+    "build:readme": "ctfl-readme build",
+    "server": "http-server ./dist"
   },
   "dependencies": {
-    "contentful-readme-generator": "^0.0.8"
+    "contentful-readme-generator": "^0.0.8",
+    "http-server": "^14.1.1"
   }
 }

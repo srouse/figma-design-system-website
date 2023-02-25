@@ -6,12 +6,17 @@ export default function renderHTML(content, css) {
   <head>
     <style>
       ${css}
+
+      :root {
+        --primary-color: #A164F9;
+      }
+
       .markdown-body {
         padding: 80px;
         max-width: 1000px;
         margin: 0 auto;
 
-        --color-accent-fg: #00f;
+        --color-accent-fg: var( --primary-color );
       }
     </style>
   </head>

@@ -4,7 +4,11 @@
   Content details in Build Information below.
 -->
 
-- [Description](#description)
+- [Implementation](#implementation)
+- [Color Sets](#color-sets)
+- [Icons - Upload, Select, or Font Awesome](#icons---upload-select-or-font-awesome)
+- [Typography - Google Fonts](#typography---google-fonts)
+- [Deployment - Github NPM Packages](#deployment---github-npm-packages)
 - [Build Information](#build-information)
 
 ---
@@ -16,23 +20,31 @@ __Project Abbreviation__: FDS
 
 __Developer Emails__: scott.rouse@gmail.com
 
-__Repo URL__: https://github.com/srouse/figma-design-system-website
+__Figma Widget URL__: ....
 
 __Production URL__: https://www.figmadesignsystem.app/
 
-__NonProduction URL__: https://nonprod--figma-design-system-website.netlify.app/
+## [Implementation](./README/implementation.md)
 
-## Description
+## Color Sets
+FDS Color Sets are....
 
-Test of readme...
+## Icons - Upload, Select, or Font Awesome
+Icons - Upload, Select, or Font Awesome
+
+## Typography - Google Fonts
+Typography (Google Fonts)
+
+## Deployment - Github NPM Packages
+Deployment and Github NPM Packages
 
 ## Build Information
 
 *Dynamically built using contentful-readme-generator. Do not edit directly.*
 
-*__updated__: 2/19/2023, 11:35:36 AM*
+*__updated__: 2/25/2023, 10:07:54 AM*
 
-*__built__: 2/19/2023, 11:55:58 AM*
+*__built__: 2/25/2023, 10:10:44 AM*
 
 *__space__: rtkhko6y3s3u*
 
