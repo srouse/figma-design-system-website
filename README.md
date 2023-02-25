@@ -18,9 +18,7 @@ __Title__: Figma Design System Readme Project
 
 __Project Abbreviation__: FDS
 
-__Developer Emails__: scott.rouse@gmail.com
-
-__Figma Widget URL__: ....
+__Figma Widget URL__: https://www.figma.com/community/widget/1124060556615523237
 
 __Production URL__: https://www.figmadesignsystem.app/
 
@@ -42,9 +40,9 @@ Deployment and Github NPM Packages
 
 *Dynamically built using contentful-readme-generator. Do not edit directly.*
 
-*__updated__: 2/25/2023, 10:07:54 AM*
+*__updated__: 2/25/2023, 10:38:31 AM*
 
-*__built__: 2/25/2023, 10:10:44 AM*
+*__built__: 2/25/2023, 11:01:14 AM*
 
 *__space__: rtkhko6y3s3u*
 
