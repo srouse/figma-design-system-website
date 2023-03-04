@@ -4,7 +4,9 @@
   Content details in Build Information below.
 -->
 
-- [Implementation](#implementation)
+- [Description](#description)
+- [What is FDS?](#what-is-fds)
+- [Design System Lifecycle](#design-system-lifecycle)
 - [Color Sets](#color-sets)
 - [Icons - Upload, Select, or Font Awesome](#icons---upload-select-or-font-awesome)
 - [Typography - Google Fonts](#typography---google-fonts)
@@ -22,10 +24,28 @@ __Figma Widget URL__: https://www.figma.com/community/widget/1124060556615523237
 
 __Production URL__: https://www.figmadesignsystem.app/
 
-## [Implementation](./README/implementation.md)
+## Description
+
+Figma Design System is a complete design system build tool within a Figma widget. It is 
+
+is am end to end design system widget leveraging Font Awesome, Google Fonts, and Github (Repo and NPM Packages). With 
+
+## What is FDS?
+What is FDS?
+
+## Design System Lifecycle
+[![Design System Lifecycle](https://images.ctfassets.net/rtkhko6y3s3u/STDEhsaxXEs9cdoWTaJ5d/c6c1a14aea3bc6bb7fcd44aa8fd91800/Design_System_Lifecycle.png)](https://images.ctfassets.net/rtkhko6y3s3u/STDEhsaxXEs9cdoWTaJ5d/c6c1a14aea3bc6bb7fcd44aa8fd91800/Design_System_Lifecycle.png "View Full Size")[image source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=5:61)
+
+
 
 ## Color Sets
-FDS Color Sets are....
+FDS Color Sets a built on the idea that colors in a system are done in steps.
+
+- Any editing updates Figma styles directly.
+- The hue of all steps can be manipulated at one time.
+- ADA feedback is immediate.
+- Step spectrum can also be 
+
 
 ## Icons - Upload, Select, or Font Awesome
 Icons - Upload, Select, or Font Awesome
@@ -40,9 +60,9 @@ Deployment and Github NPM Packages
 
 *Dynamically built using contentful-readme-generator. Do not edit directly.*
 
-*__updated__: 2/25/2023, 10:38:31 AM*
+*__updated__: 2/26/2023, 6:25:57 PM*
 
-*__built__: 2/25/2023, 11:01:14 AM*
+*__built__: 2/26/2023, 6:25:59 PM*
 
 *__space__: rtkhko6y3s3u*
 
