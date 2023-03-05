@@ -6,9 +6,8 @@
   "author": "Scott Rouse <scott.rouse@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "setup": "source .env",
     "build": "yarn build:readme",
-    "build:readme": "yarn setup && ctfl-readme build",
+    "build:readme": "ctfl-readme build",
     "server": "http-server ./dist"
   },
   "dependencies": {
