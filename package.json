@@ -6,11 +6,14 @@
   "author": "Scott Rouse <scott.rouse@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "setup": "source .env",
     "build": "yarn build:readme",
-    "build:readme": "ctfl-readme build",
+    "build:readme": "yarn setup && ctfl-readme build",
     "server": "http-server ./dist"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@srouse/readme-sites-design-system": "^0.0.7"
+  },
   "devDependencies": {
     "contentful-readme-generator": "^0.0.8",
     "http-server": "^14.1.1"
