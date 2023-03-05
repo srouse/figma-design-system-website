@@ -5,24 +5,18 @@ export default function renderHTML(content, css) {
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/readme-sites-design-system/transformations/fdst-web/rds.css" />
     <style>
       ${css}
     </style>
     <style>
-      :root {
-        --white-color: #fff;
-
-        --primary-color: #A164F9;
-        --primary-dark-color: #7014F6;
-      }
-
       html, body {
         margin: 0; padding: 0;
       }
 
       .header {
-        background-color: var( --primary-dark-color );
-        color: var( --white-color );
+        background-color: var( --rds-color-primary-7 );
+        color: var( --rds-color-grey-10 );
         font-size: 1.4em;
         height: 140px;
         display: flex;
