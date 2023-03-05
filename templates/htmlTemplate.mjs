@@ -31,7 +31,7 @@ export default function renderHTML(content, css) {
         }
 
       .markdown-body {
-        font: var( --rds-type-test-5 );
+        font: var( --rds-type-test );
       }
 
         .markdown-content,
