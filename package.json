@@ -10,7 +10,8 @@
     "build:readme": "ctfl-readme build",
     "server": "http-server ./dist"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "contentful-readme-generator": "^0.0.8",
     "http-server": "^14.1.1"
   }

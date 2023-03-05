@@ -26,7 +26,9 @@ __Production URL__: https://www.figmadesignsystem.app/
 
 ## Description
 
-Figma Design System is a complete design system build tool within a Figma widget. It is 
+Figma Design System Widget is a complete design system build tool. 
+
+Ideal for small to medium projects or just exploring your first full design system, you can build....
 
 is am end to end design system widget leveraging Font Awesome, Google Fonts, and Github (Repo and NPM Packages). With 
 
@@ -60,9 +62,9 @@ Deployment and Github NPM Packages
 
 *Dynamically built using contentful-readme-generator. Do not edit directly.*
 
-*__updated__: 2/26/2023, 6:25:57 PM*
+*__updated__: 2/26/2023, 6:27:44 PM*
 
-*__built__: 2/26/2023, 6:25:59 PM*
+*__built__: 3/4/2023, 11:19:11 AM*
 
 *__space__: rtkhko6y3s3u*
 
