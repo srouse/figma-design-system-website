@@ -6,17 +6,16 @@
   "author": "Scott Rouse <scott.rouse@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "copy": "node ./scripts/copy.mjs",
     "build": "yarn build:readme",
-    "build:readme": "yarn copy && ctfl-readme build",
-    "server": "http-server ./dist"
+    "build:readme": "ctfl-readme build",
+    "server": "http-server ./dist",
+    "showlinks": "ls -lR node_modules | grep ^l"
   },
   "dependencies": {
-    "@srouse/readme-sites-design-system": "^0.0.7",
-    "recursive-copy": "^2.0.14"
   },
   "devDependencies": {
-    "contentful-readme-generator": "^0.0.8",
-    "http-server": "^14.1.1"
+    "contentful-readme-generator": "0.0.10",
+    "http-server": "^14.1.1",
+    "recursive-copy": "^2.0.14"
   }
 }

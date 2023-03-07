@@ -33,13 +33,6 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-4.6.0.tgz#3c7c9c46e678feefe7a2e5bb609d3dbd665ffb3f"
   integrity sha512-t09vSN3MdfsyCHoFcTRCH/iUtG7OJ0CsjzB8cjAmKc/va/kIgeDI/TxsigdncE/4be734m0cvIYwNaV4i2XqAw==
 
-"@srouse/readme-sites-design-system@^0.0.7":
-  version "0.0.7"
-  resolved "https://npm.pkg.github.com/download/@srouse/readme-sites-design-system/0.0.7/91a093fd64a023a6ba0ee665233703c4094ea5b5#91a093fd64a023a6ba0ee665233703c4094ea5b5"
-  integrity sha512-P5l23h9V63AzB6Z9vIDh5d1qe/Hhek02BRmVBPz2Vxt3d8YOPF8FNSUsFZM5cPJVbNetsyEhHmW5aZkp0UirVw==
-  dependencies:
-    csstype "^3.1.1"
-
 "@szmarczak/http-timer@^4.0.5":
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-4.0.6.tgz#b4a914bb62e7c272d4e5989fe4440f812ab1d807"
@@ -390,10 +383,10 @@ concat-with-sourcemaps@*:
   dependencies:
     source-map "^0.6.1"
 
-contentful-readme-generator@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/contentful-readme-generator/-/contentful-readme-generator-0.0.8.tgz#5b7563fa5c947811499197f2fbeb7acc0a7a67b0"
-  integrity sha512-zVcylAMDrpbOeegmqvqTMN+hLYFOn8Rn2Ht6qOMtrGprLrXQCoe1m+IsmWWmlgkU0Z1j9V4iPgu7Amvp0hVPZg==
+contentful-readme-generator@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/contentful-readme-generator/-/contentful-readme-generator-0.0.10.tgz#76b5cf0bb14c61951730fb15f94d7eb8ae5bed83"
+  integrity sha512-jAIR93vbM3j+JRo2dBCdq9UxWLrz5s7tjzEYg7HkWuU+8+wgnpTqfObZece9i9CRyGvfiUAzw28hYcfvjqRXow==
   dependencies:
     badges "^4.27.0"
     chalk "^5.0.1"
@@ -472,11 +465,6 @@ cssstyle@^2.3.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
-
-csstype@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
-  integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
 data-uri-to-buffer@^4.0.0:
   version "4.0.1"
