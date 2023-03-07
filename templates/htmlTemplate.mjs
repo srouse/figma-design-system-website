@@ -206,7 +206,7 @@ export default function renderHTML(content, css) {
               margin-right: var( --rds-spacing-1-6 )">
           </rds-icon-fds-widget>
           <div style="font: var( --rds-type-text-8 );">
-            Figma Design System
+            Figma Design System Widget
           </div>
         </div>
       </div>

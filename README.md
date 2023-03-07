@@ -26,9 +26,7 @@ __Title__: Figma Design System Readme Project
 
 __Project Abbreviation__: FDS
 
-__Figma Widget URL__: https://www.figma.com/community/widget/1124060556615523237
-
-__Production URL__: https://www.figmadesignsystem.app/
+__Production URL__: https://figmadesignsystem.app/
 
 ## What is the Figma Design System Widget?
 Figma Design System Widget is a complete design system build tool. 
@@ -51,7 +49,7 @@ FDS Color Sets a built on the idea that colors in a system are done in steps.
 - Step spectrum can also be 
 
 
-[![Color Set Tokens](https://images.ctfassets.net/rtkhko6y3s3u/16sbzdl6tU5BdeLQ49MMjl/726a75b6c83c558d8604a9ede4572947/Color_Set_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/16sbzdl6tU5BdeLQ49MMjl/726a75b6c83c558d8604a9ede4572947/Color_Set_Tokens.png "View Full Size")
+[![Color Set Tokens](https://images.ctfassets.net/rtkhko6y3s3u/16sbzdl6tU5BdeLQ49MMjl/33c5a029ac50b8f1fa67e5094bc296a0/Color_Set_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/16sbzdl6tU5BdeLQ49MMjl/33c5a029ac50b8f1fa67e5094bc296a0/Color_Set_Tokens.png "View Full Size")
     
 Color Set Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=415:5945)
 
@@ -59,7 +57,7 @@ Color Set Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?nod
 ## Icon Tokens
 Icons - Upload, Select, or Font Awesome
 
-[![Icon Tokens](https://images.ctfassets.net/rtkhko6y3s3u/36WGBxePiPH68E1YUiMmDQ/5f521d07add92ee644398267b0be779c/Icon_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/36WGBxePiPH68E1YUiMmDQ/5f521d07add92ee644398267b0be779c/Icon_Tokens.png "View Full Size")
+[![Icon Tokens](https://images.ctfassets.net/rtkhko6y3s3u/36WGBxePiPH68E1YUiMmDQ/e54abacb7d23337840ca7e7e59a2b8ca/Icon_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/36WGBxePiPH68E1YUiMmDQ/e54abacb7d23337840ca7e7e59a2b8ca/Icon_Tokens.png "View Full Size")
     
 Icon Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=416:5986)
 
@@ -95,7 +93,7 @@ Breakpoint Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?no
 
 ## Custom Tokens
 
-[![Custom Tokens](https://images.ctfassets.net/rtkhko6y3s3u/4tZ7Lz29ZPUg2Kn7CTY6dd/36114e13fd6ac0bd3e98361a05bdd4db/Custom_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/4tZ7Lz29ZPUg2Kn7CTY6dd/36114e13fd6ac0bd3e98361a05bdd4db/Custom_Tokens.png "View Full Size")
+[![Custom Tokens](https://images.ctfassets.net/rtkhko6y3s3u/4tZ7Lz29ZPUg2Kn7CTY6dd/0387c0160fc1e8a6e4b5b5f4cbc70477/Custom_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/4tZ7Lz29ZPUg2Kn7CTY6dd/0387c0160fc1e8a6e4b5b5f4cbc70477/Custom_Tokens.png "View Full Size")
     
 Custom Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=417:6332)
 
@@ -130,7 +128,7 @@ Design System Lifecycle [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd
 
 
 ## Style Guide
-[View Readme Design System Style Guide PDF](https://assets.ctfassets.net/rtkhko6y3s3u/73QWNNGL1JVCoPD7qQhVah/0c59654912846f472f94de298a402664/Readme_Design_System_-_2023-03-07.pdf)
+<a href="https://assets.ctfassets.net/rtkhko6y3s3u/73QWNNGL1JVCoPD7qQhVah/0c59654912846f472f94de298a402664/Readme_Design_System_-_2023-03-07.pdf" target="_new">View Readme Design System Style Guide PDF</a>
 
 
 [![Readme DSys - Typography Page](https://images.ctfassets.net/rtkhko6y3s3u/5TJMbfAPWZLubAGoH3aKSp/1c3915590663167f095f9485ba82012a/Readme_DSys_-_Typography_Page.png)](https://images.ctfassets.net/rtkhko6y3s3u/5TJMbfAPWZLubAGoH3aKSp/1c3915590663167f095f9485ba82012a/Readme_DSys_-_Typography_Page.png "View Full Size")
@@ -142,9 +140,9 @@ Readme DSys - Typography Page [source](https://www.figma.com/file/feMH69om0kW1Wp
 
 *Dynamically built using contentful-readme-generator. Do not edit directly.*
 
-*__updated__: 3/7/2023, 12:28:07 PM*
+*__updated__: 3/7/2023, 1:17:16 PM*
 
-*__built__: 3/7/2023, 12:31:41 PM*
+*__built__: 3/7/2023, 4:01:45 PM*
 
 *__space__: rtkhko6y3s3u*
 
