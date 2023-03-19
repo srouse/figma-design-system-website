@@ -31,7 +31,7 @@ __Production URL__: https://figmadesignsystem.app/
 ## Figma Design System Widget
 Figma Design System Widget is an attempt to integrate design system concerns (ADA, color/typography sets) with Figma structures (styles, components) as well as explore how much of a design system build tool can be created entirely within Figma leveraging existing services (Font Awesome, Google Fonts, Github repos/npm packaging).
 
-This widget system can be set up to build a significantly sized design system token set, transform those tokens into css variables and atoms, scss, javascript, and typescript and be deployed directly into an NPM Package via Github. It isn't designed to be used for large production designs systems quite yet, but is perfect for small to medium sized projects or for just exploring your first full design system.
+This widget can build a significantly sized design system token set by dragging the widget on stage, choosing a name and building out the various parts of your system. From there, you can tokenize, transform (css, scss, Javascript, and Typescript), and deploy your design system all the way into a Github hosted NPM Package. It isn't designed to be used for large production designs systems quite yet, but is perfect for small to medium sized projects or for just exploring your first full design system.
 
 [![Figma Design System Intro](https://images.ctfassets.net/rtkhko6y3s3u/G1bRl15S1OX8XR54ASpel/17334e319b19753b49f9f073ecb9785e/Figma_Design_System_Intro.png)](https://images.ctfassets.net/rtkhko6y3s3u/G1bRl15S1OX8XR54ASpel/17334e319b19753b49f9f073ecb9785e/Figma_Design_System_Intro.png "View Full Size")
     
@@ -148,7 +148,7 @@ Design System Lifecycle [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd
 
 *__updated__: 3/19/2023, 6:25:40 PM*
 
-*__built__: 3/19/2023, 6:25:44 PM*
+*__built__: 3/19/2023, 6:30:32 PM*
 
 *__space__: rtkhko6y3s3u*
 
