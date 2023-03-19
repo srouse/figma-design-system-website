@@ -6,8 +6,9 @@
   "author": "Scott Rouse <scott.rouse@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "copy": "node ./scripts/copy.mjs",
     "build": "yarn build:readme",
-    "build:readme": "ctfl-readme build",
+    "build:readme": "yarn copy && ctfl-readme build",
     "server": "http-server ./dist",
     "showlinks": "ls -lR node_modules | grep ^l"
   },

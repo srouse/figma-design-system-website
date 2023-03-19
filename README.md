@@ -1,39 +1,37 @@
-# Figma Design System
+# Figma Design System Widget
 <!-- 
   Do not edit directly, built using contentful-readme-generator.
   Content details in Build Information below.
 -->
 
-- [What is the Figma Design System Widget?](#what-is-the-figma-design-system-widget)
+- [Figma Design System Widget](#figma-design-system-widget)
 - [Color Set Tokens](#color-set-tokens)
+- [Typography Set Tokens](#typography-set-tokens)
 - [Icon Tokens](#icon-tokens)
 - [Font Awesome Integration](#font-awesome-integration)
-- [Typography Set Tokens](#typography-set-tokens)
 - [Effect Tokens](#effect-tokens)
 - [Breakpoint Tokens](#breakpoint-tokens)
 - [Custom Tokens](#custom-tokens)
 - [Component Tokens](#component-tokens)
 - [Deployment - Github NPM Packages](#deployment---github-npm-packages)
 - [Github Configuration](#github-configuration)
-- [Design System Lifecycle](#design-system-lifecycle)
 - [Style Guide](#style-guide)
+- [Design System Lifecycle](#design-system-lifecycle)
 - [Build Information](#build-information)
 
 ---
 
 
-__Title__: Figma Design System Readme Project
+__Title__: Figma Design System Widget
 
 __Project Abbreviation__: FDS
 
 __Production URL__: https://figmadesignsystem.app/
 
-## What is the Figma Design System Widget?
-Figma Design System Widget is a complete design system build tool. 
+## Figma Design System Widget
+Figma Design System Widget is an attempt to integrate design system concerns (ADA, color/typography sets) with Figma structures (styles, components) as well as explore how much of a design system build tool can be created entirely within Figma leveraging existing services (Font Awesome, Google Fonts, Github repos/npm packaging).
 
-Ideal for small to medium projects or just exploring your first full design system, you can build....
-
-is am end to end design system widget leveraging Font Awesome, Google Fonts, and Github (Repo and NPM Packages). With 
+This widget system can be set up to build a significantly sized design system token set, transform those tokens into css variables and atoms, scss, javascript, and typescript and be deployed directly into an NPM Package via Github. It isn't designed to be used for large production designs systems quite yet, but is perfect for small to medium sized projects or for just exploring your first full design system.
 
 [![Figma Design System Intro](https://images.ctfassets.net/rtkhko6y3s3u/G1bRl15S1OX8XR54ASpel/17334e319b19753b49f9f073ecb9785e/Figma_Design_System_Intro.png)](https://images.ctfassets.net/rtkhko6y3s3u/G1bRl15S1OX8XR54ASpel/17334e319b19753b49f9f073ecb9785e/Figma_Design_System_Intro.png "View Full Size")
     
@@ -41,12 +39,11 @@ Figma Design System Intro [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnb
 
 
 ## Color Set Tokens
-FDS Color Sets a built on the idea that colors in a system are done in steps.
-
-- Any editing updates Figma styles directly.
-- The hue of all steps can be manipulated at one time.
-- ADA feedback is immediate.
-- Step spectrum can also be 
+- __Color Sets__. Design Systems usually step colors, so this widget will kick off creating values by choosing your step pattern and base color (the color in the center of the steps).
+- __Figma Styles__. All colors created within the widget are automatically synchronized with native Figma styles.
+- __Editing All Steps__. Editing one color will show all of the other dots for the other steps. The selected color will have the biggest selector, but all other selectors will be editable as well. Build a better color arc of stepped colors.
+- __Locking Hue__. During editing of any one color you can lock the hue and change the hue for all colors.
+- __ADA feedback__. Design Systems can be built with conventions where each color can work with ADA compliance at specific steps. This widget will surface that information and make it easy to knudge your colors into ADA compliance. 
 
 
 [![Color Set Tokens](https://images.ctfassets.net/rtkhko6y3s3u/16sbzdl6tU5BdeLQ49MMjl/33c5a029ac50b8f1fa67e5094bc296a0/Color_Set_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/16sbzdl6tU5BdeLQ49MMjl/33c5a029ac50b8f1fa67e5094bc296a0/Color_Set_Tokens.png "View Full Size")
@@ -54,8 +51,20 @@ FDS Color Sets a built on the idea that colors in a system are done in steps.
 Color Set Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=415:5945)
 
 
+## Typography Set Tokens
+- __Typography Sets__. Typography can also be managed as a set. A typography token can be created one by one, but also by choosing a set patter with a base font, weight, and size.
+- __Google Fonts__. The tokens created with the widget are transformed into a Google Fonts embed, so each of the previews (the large sentence and the individual thumbnails) are directly from Google Fonts. If they are not available in Google Fonts (and thus not able to be transformed into a simple css file) you will be alerted immediately.
+
+[![Typography Step Tokens](https://images.ctfassets.net/rtkhko6y3s3u/5P8l4h9nJmxF3YE4OcjyWQ/bee6547006e684f15761fdc0d3d8821e/Typography_Step_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/5P8l4h9nJmxF3YE4OcjyWQ/bee6547006e684f15761fdc0d3d8821e/Typography_Step_Tokens.png "View Full Size")
+    
+Typography Step Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=417:6153)
+
+
 ## Icon Tokens
-Icons - Upload, Select, or Font Awesome
+- __Multiple Sources__. In creating a new icon, you can choose from uploading an svg, selecting an icon on the Figma stage, or downloading from Font Awesome.
+- __Font Awesome Integration__. 
+- __Automatic Icon Component__. The widget will automatically create a component that has variants in the names of the icons you create. The widget is actually wrapped around that component.
+- __Spacing and Offset__. Some icons work better flush to the edges and some do not. The widget will allow you to scale and nudge each specific icon into place.
 
 [![Icon Tokens](https://images.ctfassets.net/rtkhko6y3s3u/36WGBxePiPH68E1YUiMmDQ/e54abacb7d23337840ca7e7e59a2b8ca/Icon_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/36WGBxePiPH68E1YUiMmDQ/e54abacb7d23337840ca7e7e59a2b8ca/Icon_Tokens.png "View Full Size")
     
@@ -63,18 +72,11 @@ Icon Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=
 
 
 ## Font Awesome Integration
+The Font Awesome integration includes using your paid subscription. To use all the available icons in your subscription, you will need to create an api token and a kit that includes these icons. The widget will walk you through attaching that kit via the API token.
 
 [![Font Awesome Integration](https://images.ctfassets.net/rtkhko6y3s3u/T7nvQx4FF0Xo30oFl64Rp/da8cfc3414b53323824ee0e9e00a548a/Font_Awesome_Integration.png)](https://images.ctfassets.net/rtkhko6y3s3u/T7nvQx4FF0Xo30oFl64Rp/da8cfc3414b53323824ee0e9e00a548a/Font_Awesome_Integration.png "View Full Size")
     
 Font Awesome Integration [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=417:6090)
-
-
-## Typography Set Tokens
-Typography (Google Fonts)
-
-[![Typography Step Tokens](https://images.ctfassets.net/rtkhko6y3s3u/5P8l4h9nJmxF3YE4OcjyWQ/bee6547006e684f15761fdc0d3d8821e/Typography_Step_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/5P8l4h9nJmxF3YE4OcjyWQ/bee6547006e684f15761fdc0d3d8821e/Typography_Step_Tokens.png "View Full Size")
-    
-Typography Step Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=417:6153)
 
 
 ## Effect Tokens
@@ -99,6 +101,7 @@ Custom Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-i
 
 
 ## Component Tokens
+(Not presently implemented) Component tokens will be created from attaching a component to the Figma Design System widget. They will only create scss transformations since direct css will create relatively unweildy results.
 
 [![Component Tokens](https://images.ctfassets.net/rtkhko6y3s3u/1qczLdmqKJUsG8LtOvX6z1/18cd16c23b26ce557cc70cb75d8ab843/Component_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/1qczLdmqKJUsG8LtOvX6z1/18cd16c23b26ce557cc70cb75d8ab843/Component_Tokens.png "View Full Size")
     
@@ -114,10 +117,22 @@ Github Deployment [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?no
 
 
 ## Github Configuration
+The tokens created with the Figma Design System widget can be immediately transformed on deployment and deployed to a Github repo as well as a Github NPM package. This requires a Github account and an access token that has workflow and read:packages permissions (see below).
 
 [![Github Configuration](https://images.ctfassets.net/rtkhko6y3s3u/5o9Na9IAKpMoLlNeOB7N1/d90b7dbf573bad045c3287b81e4ae947/Github_Configuration.png)](https://images.ctfassets.net/rtkhko6y3s3u/5o9Na9IAKpMoLlNeOB7N1/d90b7dbf573bad045c3287b81e4ae947/Github_Configuration.png "View Full Size")
     
 Github Configuration [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=417:6464)
+
+
+## Style Guide
+A good design system documents in the same motion that it captures values. The Figma Design System is a living document that can be composed and presented as you will with each token set presented clearly in each widget.
+
+<a href="https://assets.ctfassets.net/rtkhko6y3s3u/7xU711XEoyQbXkLtrW7Ayt/bc83c4067ee5ef25de8575a39567f119/Readme_Design_System_-_2023-03-19.pdf" target="_new">View Readme Design System Style Guide PDF</a>
+
+
+[![Readme DSys - Typography Page](https://images.ctfassets.net/rtkhko6y3s3u/5TJMbfAPWZLubAGoH3aKSp/1c3915590663167f095f9485ba82012a/Readme_DSys_-_Typography_Page.png)](https://images.ctfassets.net/rtkhko6y3s3u/5TJMbfAPWZLubAGoH3aKSp/1c3915590663167f095f9485ba82012a/Readme_DSys_-_Typography_Page.png "View Full Size")
+    
+Readme DSys - Typography Page [source](https://www.figma.com/file/feMH69om0kW1WpgxX2cffW/?node-id=24:3628)
 
 
 ## Design System Lifecycle
@@ -127,22 +142,13 @@ Github Configuration [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/
 Design System Lifecycle [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=411:6280)
 
 
-## Style Guide
-<a href="https://assets.ctfassets.net/rtkhko6y3s3u/73QWNNGL1JVCoPD7qQhVah/0c59654912846f472f94de298a402664/Readme_Design_System_-_2023-03-07.pdf" target="_new">View Readme Design System Style Guide PDF</a>
-
-
-[![Readme DSys - Typography Page](https://images.ctfassets.net/rtkhko6y3s3u/5TJMbfAPWZLubAGoH3aKSp/1c3915590663167f095f9485ba82012a/Readme_DSys_-_Typography_Page.png)](https://images.ctfassets.net/rtkhko6y3s3u/5TJMbfAPWZLubAGoH3aKSp/1c3915590663167f095f9485ba82012a/Readme_DSys_-_Typography_Page.png "View Full Size")
-    
-Readme DSys - Typography Page [source](https://www.figma.com/file/feMH69om0kW1WpgxX2cffW/?node-id=24:3628)
-
-
 ## Build Information
 
 *Dynamically built using contentful-readme-generator. Do not edit directly.*
 
-*__updated__: 3/7/2023, 1:17:16 PM*
+*__updated__: 3/19/2023, 6:25:40 PM*
 
-*__built__: 3/7/2023, 4:01:45 PM*
+*__built__: 3/19/2023, 6:25:44 PM*
 
 *__space__: rtkhko6y3s3u*
 
