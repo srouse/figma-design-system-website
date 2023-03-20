@@ -13,6 +13,14 @@ export default function renderHTML(content, css) {
     </style>
     <link rel="stylesheet" href="./assets/styles.css?${cacheBreak}" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKPHMTEMSG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GKPHMTEMSG');
+  </script>
   <body class="markdown-body">
       <div class="header">
         <div class="header-content">
