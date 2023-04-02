@@ -26,6 +26,8 @@ __Title__: Figma Design System Widget
 
 __Project Abbreviation__: FDS
 
+__Figma Widget URL__: https://www.figma.com/community/widget/1219461874726507820
+
 __Production URL__: https://figmadesignsystem.app/
 
 ## Figma Design System Widget
@@ -55,7 +57,7 @@ Color Set Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?nod
 - __Typography Sets__. Typography can also be managed as a set. A typography token can be created one by one, but also by choosing a set patter with a base font, weight, and size.
 - __Google Fonts__. The tokens created with the widget are transformed into a Google Fonts embed, so each of the previews (the large sentence and the individual thumbnails) are directly from Google Fonts. If they are not available in Google Fonts (and thus not able to be transformed into a simple css file) you will be alerted immediately.
 
-[![Typography Step Tokens](https://images.ctfassets.net/rtkhko6y3s3u/5P8l4h9nJmxF3YE4OcjyWQ/bee6547006e684f15761fdc0d3d8821e/Typography_Step_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/5P8l4h9nJmxF3YE4OcjyWQ/bee6547006e684f15761fdc0d3d8821e/Typography_Step_Tokens.png "View Full Size")
+[![Typography Step Tokens](https://images.ctfassets.net/rtkhko6y3s3u/5P8l4h9nJmxF3YE4OcjyWQ/610a8b9b3d9576c19655f6ea935e2a2b/Typography_Step_Tokens.png)](https://images.ctfassets.net/rtkhko6y3s3u/5P8l4h9nJmxF3YE4OcjyWQ/610a8b9b3d9576c19655f6ea935e2a2b/Typography_Step_Tokens.png "View Full Size")
     
 Typography Step Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=417:6153)
 
@@ -146,9 +148,9 @@ Design System Lifecycle [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd
 
 *Dynamically built using contentful-readme-generator. Do not edit directly.*
 
-*__updated__: 3/19/2023, 6:25:40 PM*
+*__updated__: 3/22/2023, 9:19:51 AM*
 
-*__built__: 3/19/2023, 6:30:32 PM*
+*__built__: 4/2/2023, 6:49:02 PM*
 
 *__space__: rtkhko6y3s3u*
 

@@ -7,19 +7,19 @@ html, body {
 }
 
 .markdown-body {
-  font: var( --rds-type-text-sans );
+  font: var( --rds-type-text );
 }
 
   .markdown-body strong {
-    font: var( --rds-type-text-sans-bold-5 );
+    font: var( --rds-type-text-bold-5 );
   }
 
   .markdown-body h1 {
-    font: var( --rds-type-text-sans-9 );
+    font: var( --rds-type-text-9 );
   }
 
   .markdown-body h2 {
-    font: var( --rds-type-text-sans-8 );
+    font: var( --rds-type-text-8 );
     margin-top: calc( var( --rds-spacing-2 ) + var( --rds-spacing-0-6 ));
     margin-bottom: var( --rds-spacing-1 );
     padding: 0;
