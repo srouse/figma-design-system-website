@@ -2,19 +2,15 @@ import { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
 import faunadb from 'faunadb';
 
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
-
   const q = faunadb.query
-
-  // Acquire the secret and optional endpoint from environment variables
   const secret = process.env.FAUNADB_SECRET;
-  var endpoint = process.env.FAUNADB_ENDPOINT;
 
   if (typeof secret === 'undefined' || secret === '') {
     console.error('The FAUNADB_SECRET environment variable is not set, exiting.');
     process.exit(1);
   }
 
-  if (!endpoint) endpoint = 'https://db.fauna.com/'
+  const endpoint = 'https://db.fauna.com/'
 
   var mg, domain, port, scheme
   if ((mg = endpoint.match(/^(https?):\/\/([^:]+)(:(\d+))?/))) {
@@ -31,7 +27,6 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     scheme: scheme as any,
   });
 
-  // Create a collection called 'myCollection'
   const result = await client.query(
     // q.CreateCollection({ name: 'myCollection' })
     q.Create(
@@ -57,6 +52,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     return {
       statusCode: 200,
       body: JSON.stringify({ message: result }),
+      test: event
     };
   }
 
