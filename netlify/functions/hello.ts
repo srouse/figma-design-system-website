@@ -27,7 +27,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     scheme: scheme as any,
   });
 
-  const requestBody = event.body ? JSON.parse(event.body) : undefined;
+  // const requestBody = event.body ? JSON.parse(event.body) : undefined;
 
   return {
     statusCode: 200,
