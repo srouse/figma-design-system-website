@@ -1,6 +1,5 @@
 import { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
 import faunadb from 'faunadb';
-import { v4 as uuidv4 } from 'uuid';
 
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
   const q = faunadb.query
@@ -55,7 +54,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   if (result) {
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: result}),
+      body: JSON.stringify({ message: result, event}),
     };
   }
 
