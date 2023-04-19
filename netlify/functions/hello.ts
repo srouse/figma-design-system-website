@@ -36,9 +36,8 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       q.Ref(q.Collection('FDS'), id),
       {
         data: {
-          type: 'apple',
-          colors: ['red', 'green'],
-          quantity: 15,
+          wid: event.queryStringParameters?.wid,
+          tokens: event.queryStringParameters?.tokens,
         },
       },
     )
