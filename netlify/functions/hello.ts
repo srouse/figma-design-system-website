@@ -32,7 +32,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   const result = await client.query(
     // q.CreateCollection({ name: 'myCollection' })
     q.Create(
-      q.Ref(q.Collection('FDS'), uuidv4()),
+      q.Ref(q.Collection('FDS')),
       {
         data: {
           type: 'apple',
