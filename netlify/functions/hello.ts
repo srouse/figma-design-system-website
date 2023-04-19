@@ -33,7 +33,17 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   // Create a collection called 'myCollection'
   const result = await client.query(
-    q.CreateCollection({ name: 'myCollection' })
+    // q.CreateCollection({ name: 'myCollection' })
+    q.Create(
+      q.Ref(q.Collection('FDS'), '1'),
+      {
+        data: {
+          type: 'apple',
+          colors: ['red', 'green'],
+          quantity: 15,
+        },
+      },
+    )
   )
   .catch((err) => console.error(
     'Error: [%s] %s: %s',
