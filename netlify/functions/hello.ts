@@ -27,16 +27,27 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     scheme: scheme as any,
   });
 
+  const requestBody = event.body ? JSON.parse(event.body) : undefined;
+  if (!requestBody) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ message: 'no data sent' }),
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
+      },
+    };
+  }
   const id = await client.query(q.NewId());
   let error: object | undefined;
-  const tokens = event.queryStringParameters?.tokens;
+  const tokens = requestBody.tokens;
   const result = await client.query(
     // q.CreateCollection({ name: 'myCollection' })
     q.Create(
       q.Ref(q.Collection('FDS'), id),
       {
         data: {
-          wid: event.queryStringParameters?.wid,
+          wid: requestBody.wid,
           tokens: tokens ? JSON.parse( tokens ) : 'no tokens',
         },
       },
@@ -54,7 +65,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   if (result) {
     return {
       statusCode: 201,
-      body: JSON.stringify({ message: result, event }),
+      body: JSON.stringify({ message: result }),
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Content-Type',
@@ -65,7 +76,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   if (error) {
     return {
       statusCode: 400,
-      body: JSON.stringify({ message: error, event }),
+      body: JSON.stringify({ message: error }),
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Content-Type',
@@ -75,7 +86,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: 'nothing done', event }),
+    body: JSON.stringify({ message: 'nothing done' }),
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': 'Content-Type',
