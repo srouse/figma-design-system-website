@@ -57,6 +57,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       body: JSON.stringify({ message: result }),
       headers: {
         'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
       },
     };
   }
@@ -67,6 +68,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       body: JSON.stringify({ message: error }),
       headers: {
         'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Content-Type',
       },
     };
   }
@@ -76,6 +78,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     body: 'nothing done',
     headers: {
       'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type',
     },
   };
 };
