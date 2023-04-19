@@ -37,7 +37,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       {
         data: {
           wid: event.queryStringParameters?.wid,
-          tokens: tokens ? JSON.parse( decodeURIComponent(tokens) ) : 'no tokens',
+          tokens: tokens ? JSON.parse( tokens ) : 'no tokens',
         },
       },
     )
@@ -53,8 +53,8 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   if (result) {
     return {
-      statusCode: 200,
-      body: JSON.stringify({ message: result }),
+      statusCode: 201,
+      body: JSON.stringify({ message: result, event }),
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Content-Type',
@@ -64,8 +64,8 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   if (error) {
     return {
-      statusCode: 200,
-      body: JSON.stringify({ message: error }),
+      statusCode: 400,
+      body: JSON.stringify({ message: error, event }),
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Content-Type',
@@ -75,7 +75,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   return {
     statusCode: 200,
-    body: 'nothing done',
+    body: JSON.stringify({ message: 'nothing done', event }),
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': 'Content-Type',
