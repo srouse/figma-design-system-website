@@ -13,6 +13,7 @@
     "showlinks": "ls -lR node_modules | grep ^l"
   },
   "dependencies": {
+    "@netlify/functions": "^1.4.0"
   },
   "devDependencies": {
     "contentful-readme-generator": "0.0.10",
