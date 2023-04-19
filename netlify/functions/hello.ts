@@ -10,7 +10,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     process.exit(1);
   }
 
-  const endpoint = 'https://db.fauna.com/'
+  const endpoint = 'https://db.fauna.com/';
 
   var mg, domain, port, scheme
   if ((mg = endpoint.match(/^(https?):\/\/([^:]+)(:(\d+))?/))) {
@@ -27,6 +27,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     scheme: scheme as any,
   });
 
+  let error: object | undefined;
   const result = await client.query(
     // q.CreateCollection({ name: 'myCollection' })
     q.Create(
@@ -40,18 +41,27 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       },
     )
   )
-  .catch((err) => console.error(
-    'Error: [%s] %s: %s',
-    err.name,
-    err.message,
-    err.errors()[0].description,
-  ))
+  .catch((err) => {
+    error = [
+      'Error: [%s] %s: %s',
+      err.name,
+      err.message,
+      err.errors()[0].description
+    ];
+  });
 
   if (result) {
-    console.log(result);
     return {
       statusCode: 200,
       body: JSON.stringify({ message: result }),
+      test: event
+    };
+  }
+
+  if (error) {
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: error }),
       test: event
     };
   }
