@@ -64,7 +64,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   if (result) {
     return {
-      statusCode: 201,
+      statusCode: 200,
       body: JSON.stringify({ message: result }),
       headers: {
         'Access-Control-Allow-Origin': '*',
