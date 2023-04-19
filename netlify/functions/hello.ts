@@ -28,7 +28,6 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   });
 
   const requestBody = event.body ? JSON.parse(event.body) : undefined;
-
   if (!requestBody) {
     return {
       statusCode: 400,
@@ -75,7 +74,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   if (error) {
     return {
-      statusCode: 400,
+      statusCode: 200,
       body: JSON.stringify({ message: error }),
       headers: {
         'Access-Control-Allow-Origin': '*',
