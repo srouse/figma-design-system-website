@@ -34,6 +34,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     body: JSON.stringify({
       message: event.body,
       event,
+      msg3: event.body ? JSON.parse(event.body) : 'none',
       message2: event.body ?
         Buffer.from(event.body, 'base64').toString('utf8')
         : ''
