@@ -14,9 +14,11 @@
   },
   "dependencies": {
     "@netlify/functions": "^1.4.0",
-    "faunadb": "^4.8.0"
+    "faunadb": "^4.8.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/uuid": "^9.0.1",
     "contentful-readme-generator": "0.0.10",
     "http-server": "^14.1.1",
     "recursive-copy": "^2.0.14"

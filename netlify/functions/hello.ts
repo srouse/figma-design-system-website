@@ -1,5 +1,6 @@
 import { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
 import faunadb from 'faunadb';
+import { v4 as uuidv4 } from 'uuid';
 
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
   const q = faunadb.query
@@ -31,7 +32,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   const result = await client.query(
     // q.CreateCollection({ name: 'myCollection' })
     q.Create(
-      q.Ref(q.Collection('FDS'), '1'),
+      q.Ref(q.Collection('FDS'), uuidv4()),
       {
         data: {
           type: 'apple',
