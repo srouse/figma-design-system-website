@@ -38,7 +38,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       {
         data: {
           wid: event.queryStringParameters?.wid,
-          tokens: tokens ? JSON.parse( tokens ) : 'no tokens',
+          tokens: tokens ? JSON.parse( decodeURIComponent(tokens) ) : 'no tokens',
         },
       },
     )
