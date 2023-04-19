@@ -28,11 +28,12 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     scheme: scheme as any,
   });
 
+  const id = await client.query(q.NewId());
   let error: object | undefined;
   const result = await client.query(
     // q.CreateCollection({ name: 'myCollection' })
     q.Create(
-      q.Ref(q.Collection('FDS')),
+      q.Ref(q.Collection('FDS'), id),
       {
         data: {
           type: 'apple',
