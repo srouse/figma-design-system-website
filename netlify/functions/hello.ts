@@ -55,19 +55,28 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     return {
       statusCode: 200,
       body: JSON.stringify({ message: result }),
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      },
     };
   }
 
   if (error) {
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: error })
+      body: JSON.stringify({ message: error }),
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      },
     };
   }
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: "Hello World", test: process.env.test }),
+    body: 'nothing done',
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   };
 };
 
