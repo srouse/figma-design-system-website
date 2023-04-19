@@ -2,6 +2,17 @@ import { Handler, HandlerEvent, HandlerContext } from "@netlify/functions";
 import faunadb from 'faunadb';
 
 const handler: Handler = async (event: HandlerEvent, context: HandlerContext) => {
+
+  if (event.httpMethod === 'OPTIONS') {
+    return {
+      statusCode: 200,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      },
+    };
+  }
+
   const q = faunadb.query
   const secret = process.env.FAUNADB_SECRET;
 
@@ -30,7 +41,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   const requestBody = event.body ? JSON.parse(event.body) : undefined;
   if (!requestBody) {
     return {
-      statusCode: 400,
+      statusCode: 200,
       body: JSON.stringify({ message: 'no data sent' }),
       headers: {
         'Access-Control-Allow-Origin': '*',
