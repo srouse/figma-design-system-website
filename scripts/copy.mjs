@@ -23,3 +23,14 @@ try {
 } catch (error) {
 	console.error('Copy Error: ' + error);
 }
+
+try {
+  const results = await copy(
+    './www',
+    './dist/',
+    {overwrite: true},
+  );
+  console.info('Copied ' + results.length + ' files');
+} catch (error) {
+	console.error('Copy Error: ' + error);
+}
