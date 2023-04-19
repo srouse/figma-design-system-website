@@ -54,15 +54,14 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   if (result) {
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: result, test: event }),
+      body: JSON.stringify({ message: result}),
     };
   }
 
   if (error) {
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: error }),
-      test: event
+      body: JSON.stringify({ message: error })
     };
   }
 
