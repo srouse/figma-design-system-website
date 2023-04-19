@@ -31,7 +31,11 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ message: event.body, event}),
+    body: JSON.stringify({
+      message: event.body,
+      event,
+      message2: event.body ? atob(event.body) : ''
+    }),
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': 'Content-Type',
