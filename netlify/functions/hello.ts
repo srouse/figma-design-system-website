@@ -28,6 +28,16 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   });
 
   const requestBody = event.body ? JSON.parse(event.body) : undefined;
+
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: event.body, event}),
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    },
+  };
+
   if (!requestBody) {
     return {
       statusCode: 400,
