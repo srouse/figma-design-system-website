@@ -32,15 +32,9 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   });
 
   // Create a collection called 'myCollection'
-  await client.query(
+  const result = await client.query(
     q.CreateCollection({ name: 'myCollection' })
-  ).then((ret) => {
-    console.log(ret);
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: ret }),
-    };
-  })
+  )
   .catch((err) => console.error(
     'Error: [%s] %s: %s',
     err.name,
@@ -48,6 +42,13 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     err.errors()[0].description,
   ))
 
+  if (result) {
+    console.log(result);
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: result }),
+    };
+  }
 
   return {
     statusCode: 200,
