@@ -34,7 +34,9 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     body: JSON.stringify({
       message: event.body,
       event,
-      message2: event.body ? atob(event.body) : ''
+      message2: event.body ?
+        Buffer.from(event.body, 'base64').toString('utf8')
+        : ''
     }),
     headers: {
       'Access-Control-Allow-Origin': '*',
