@@ -40,7 +40,6 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
   }
   const id = await client.query(q.NewId());
   let error: object | undefined;
-  const tokens = requestBody.tokens;
   const result = await client.query(
     // q.CreateCollection({ name: 'myCollection' })
     q.Create(
@@ -48,7 +47,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
       {
         data: {
           wid: requestBody.wid,
-          tokens: tokens ? JSON.parse( tokens ) : 'no tokens',
+          tokens:requestBody.tokens,
         },
       },
     )
