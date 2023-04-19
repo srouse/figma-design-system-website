@@ -27,23 +27,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
     scheme: scheme as any,
   });
 
-  // const requestBody = event.body ? JSON.parse(event.body) : undefined;
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      message: event.body,
-      event,
-      msg3: event.body ? JSON.parse(event.body) : 'none',
-      message2: event.body ?
-        Buffer.from(event.body, 'base64').toString('utf8')
-        : ''
-    }),
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
-  };
+  const requestBody = event.body ? JSON.parse(event.body) : undefined;
 
   if (!requestBody) {
     return {
