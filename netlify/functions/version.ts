@@ -14,7 +14,7 @@ const handler: Handler = async (event: HandlerEvent, context: HandlerContext) =>
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ version: 'v0.0.5' }),
+    body: JSON.stringify({ version: 'v0.0.6' }),
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': 'Content-Type',
