@@ -1,6 +1,6 @@
 {
   "name": "figma-design-system-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/srouse/figma-design-system-website.git",
   "author": "Scott Rouse <scott.rouse@gmail.com>",
