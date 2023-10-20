@@ -13,6 +13,7 @@
 - [Breakpoint Tokens](#breakpoint-tokens)
 - [Custom Tokens](#custom-tokens)
 - [Component Tokens](#component-tokens)
+- [Downloading Code](#downloading-code)
 - [Deployment - Github NPM Packages](#deployment---github-npm-packages)
 - [Github Configuration](#github-configuration)
 - [Style Guide](#style-guide)
@@ -110,6 +111,21 @@ Custom Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-i
 Component Tokens [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=417:6379)
 
 
+## Downloading Code
+Tokens can be transformed instantly and copied to your clipboard with several different outputs:
+
+- Tokens. W3C formatted tokens
+- CSS Variables. Tokens transformed into css properties.
+- CSS Fonts. Google font css embeds
+- Javascript. Tokens transformed into a javascript object.
+
+This is a subset of all the transformations available with the Figma Design System widget. If you would like to use the Typescript or Atomic transformations you will need to use the GitHub Deploy.
+
+[![Downloads](https://images.ctfassets.net/rtkhko6y3s3u/1073jN2bzY0EcHuXrThG3o/1fdae2ed357d8f8cd32d587c39c1330e/Downloads.png)](https://images.ctfassets.net/rtkhko6y3s3u/1073jN2bzY0EcHuXrThG3o/1fdae2ed357d8f8cd32d587c39c1330e/Downloads.png "View Full Size")
+    
+Downloads [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=515:6149)
+
+
 ## Deployment - Github NPM Packages
 Deployment and Github NPM Packages
 
@@ -148,9 +164,9 @@ Design System Lifecycle [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd
 
 *Dynamically built using contentful-readme-generator. Do not edit directly.*
 
-*__updated__: 3/22/2023, 9:19:51 AM*
+*__updated__: 4/22/2023, 4:22:33 PM*
 
-*__built__: 4/19/2023, 12:19:39 PM*
+*__built__: 6/14/2023, 4:08:58 PM*
 
 *__space__: rtkhko6y3s3u*
 
