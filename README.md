@@ -127,7 +127,7 @@ Downloads [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?node-id=51
 
 
 ## Deployment - Github NPM Packages
-Deployment and Github NPM Packages
+Deployment and Github NPM Packages.
 
 [![Github Deployment](https://images.ctfassets.net/rtkhko6y3s3u/1NVWRrZ8pRlgk7teOOT5ZP/ced8cae884f4d78ce20e32c1e0e2e079/Github_Deployment.png)](https://images.ctfassets.net/rtkhko6y3s3u/1NVWRrZ8pRlgk7teOOT5ZP/ced8cae884f4d78ce20e32c1e0e2e079/Github_Deployment.png "View Full Size")
     
@@ -136,6 +136,8 @@ Github Deployment [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd7j/?no
 
 ## Github Configuration
 The tokens created with the Figma Design System widget can be immediately transformed on deployment and deployed to a Github repo as well as a Github NPM package. This requires a Github account and an access token that has workflow and read:packages permissions (see below).
+
+Note: The Figma Design System plugin will create and configure your Github repo for you, so enter a name of a repository that does NOT yet exist.
 
 [![Github Configuration](https://images.ctfassets.net/rtkhko6y3s3u/5o9Na9IAKpMoLlNeOB7N1/d90b7dbf573bad045c3287b81e4ae947/Github_Configuration.png)](https://images.ctfassets.net/rtkhko6y3s3u/5o9Na9IAKpMoLlNeOB7N1/d90b7dbf573bad045c3287b81e4ae947/Github_Configuration.png "View Full Size")
     
@@ -166,7 +168,7 @@ Design System Lifecycle [source](https://www.figma.com/file/Msm91sl0dhVPyjUnnbtd
 
 *__updated__: 4/22/2023, 4:22:33 PM*
 
-*__built__: 6/14/2023, 4:08:58 PM*
+*__built__: 11/8/2023, 11:53:22 AM*
 
 *__space__: rtkhko6y3s3u*
 
