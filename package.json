@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/uuid": "^9.0.1",
-    "contentful-readme-generator": "0.0.10",
+    "contentful-readme-generator": "0.0.23",
     "http-server": "^14.1.1",
     "recursive-copy": "^2.0.14"
   }
